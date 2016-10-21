@@ -30,13 +30,13 @@
       var message = {};
       if (lunchListlength <= 0) {
         message["messageText"] = messages[0];
-        message["messageClass"] = "black";
+        message["messageClass"] = "red";
       } else if (lunchListlength <= 3) {
         message["messageText"] = messages[1];
         message["messageClass"] = "green";
       } else {
         message["messageText"] = messages[2];
-        message["messageClass"] = "red";
+        message["messageClass"] = "green";
       }
       return message;
     };
