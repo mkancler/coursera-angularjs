@@ -1,0 +1,19 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Short name</th>
+      <th>Description</th>
+      <th>{{ itemsNumber }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in items">
+      <td>{{ item.name }}</td>
+      <td>{{ item.short_name }}</td>
+      <td class="foundItems">{{ item.description }}</td>
+      <td><button type="button" ng-click="removeItem({index: $index})" class="btn btn-default">
+        Don't want this one</button></td>
+    </tr>
+  </tbody>
+</table>
