@@ -1,0 +1,7 @@
+a.list-group-item.list-group-item-action {
+  cursor: pointer;
+}
+
+.categories .label {
+  margin-right: 15px;
+}

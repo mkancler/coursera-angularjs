@@ -1,0 +1,14 @@
+<!-- <ul>
+  <li ng-repeat="item in $ctrl.itemsList">
+    {{ item.name }}<br>
+    {{ item.description }}
+  </li>
+</ul> -->
+
+<div class="list-group">
+  <div ng-repeat="item in $ctrl.itemsList" class="list-group-item">
+    <!-- <span class="label label-default">{{ category.short_name }}</span> -->
+    <strong>{{ item.name }}</strong><br>
+    {{ item.description }}
+  </div>
+</div>
